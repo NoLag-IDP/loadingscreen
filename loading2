@@ -190,7 +190,7 @@ task.delay(totalTime + 3, function()
 
 	-- 5-Minute progress (stays after 100%)
 	local startTime = tick()
-	local totalTime = 300
+	local totalTime = 210
 	RunService.RenderStepped:Connect(function()
 	    local elapsed = tick() - startTime
 	    local progress = math.clamp(elapsed / totalTime, 0, 1)
